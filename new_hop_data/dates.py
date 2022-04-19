@@ -31,15 +31,23 @@ for file in sys.argv[1:]:
 	month = [match.group(2)]
 	day = [match.group(3)]
 	#CTR = 61355
-	time = 0
+	hour = 0
 	#Now split by line and add them into one file need 38 numbers separated by tabs for each minute.
+	#But each number needs to be a new line of 38 numbers
 	for line in IN:
 		line = line.strip("\n")
-		CTR = CTR + 1
-		OUT.write("%d\t" % (CTR))
-		OUT.write("%s %s %s\t" % (year, month, day))
-		OUT.write("1\t")
-		OUT.write(line + "\n")
+		line = line.split("\t")
+		hour = hour + 1
+		minute = 0
+		for item in line:
+			CTR = CTR + 1
+			minute = minute + 1
+			OUT.write("%d\t" % (CTR))
+			OUT.write("%s %s %s\t" % (year, month, day))
+			OUT.write("%s:%s:00\t" % (hour, minute))
+			OUT.write("1\t")
+			OUT.write("%s" % (item))
+			OUT.write("\n")
 	IN.close()
 	print(day)
 	#IN.close()
