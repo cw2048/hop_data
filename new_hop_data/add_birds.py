@@ -22,6 +22,6 @@ for file in sys.argv[1:]:
 		#OUT.write("%d\t" % (time))
 		#OUT.write("1\t")
 		#OUT.write(Line + "\n")
-	#print(date)
+	print(date)
 	#IN.close()
 #OUT.close()
