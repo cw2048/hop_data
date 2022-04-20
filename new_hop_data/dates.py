@@ -43,7 +43,20 @@ for file in sys.argv[1:]:
 			CTR = CTR + 1
 			minute = minute + 1
 			OUT.write("%d\t" % (CTR))
-			OUT.write("%s %s %s\t" % (year, month, day))
+			for y in year:
+				OUT.write(y[2])
+				OUT.write(y[3])
+			OUT.write(" ")
+			for m in month:
+				OUT.write(m[0])
+				OUT.write(m[1])
+				OUT.write(m[2])
+			OUT.write(" ")
+			for d in day:
+				OUT.write(d[0])
+				OUT.write(d[1])
+			OUT.write("\t")
+			#OUT.write(" %s %s\t" % (month, day))
 			OUT.write("%s:%s:00\t" % (hour, minute))
 			OUT.write("1\t")
 			OUT.write("%s" % (item))
