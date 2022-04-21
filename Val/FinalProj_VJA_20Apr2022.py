@@ -8,6 +8,8 @@ import pandas as pd
 from datetime import datetime
 from pathlib import Path
 
+
+#create path for outfile
 outdir_path = input("type path for OUTPUT directory, no quotes (hint: /Users/val/Desktop/hop_data/hopdata_cleaned): ")
 os.makedirs(outdir_path, exist_ok=True)
 os.chdir(outdir_path)
