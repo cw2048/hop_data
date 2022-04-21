@@ -43,21 +43,32 @@ for file in sys.argv[1:]:
 			CTR = CTR + 1
 			minute = minute + 1
 			OUT.write("%d\t" % (CTR))
-			for y in year:
-				OUT.write(y[2])
-				OUT.write(y[3])
+			#getting 1 digit days
+			#s = 1
+			#str_day = [str(da) for da in day]
+			#a_str_day = "".join(str_day)
+			#int_day = int(a_str_day)
+			for d in day:
+				if len(d) == 1:
+					OUT.write(d[0])
+				else:
+					OUT.write(d[0])
+					OUT.write(d[1])
 			OUT.write(" ")
 			for m in month:
 				OUT.write(m[0])
 				OUT.write(m[1])
 				OUT.write(m[2])
 			OUT.write(" ")
-			for d in day:
-				OUT.write(d[0])
-				OUT.write(d[1])
+			for y in year:
+				OUT.write(y[2])
+				OUT.write(y[3])
 			OUT.write("\t")
 			#OUT.write(" %s %s\t" % (month, day))
-			OUT.write("%s:%s:00\t" % (hour, minute))
+			#for h in hour:
+				#OUT.write(h[0])
+				#OUT.write(h[1])
+			OUT.write("%s:%s:00\t" % (str(hour).zfill(2), str(minute).zfill(2)))
 			OUT.write("1\t")
 			OUT.write("%s" % (item))
 			OUT.write("\n")
