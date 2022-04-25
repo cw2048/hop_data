@@ -7,7 +7,7 @@ import re
 
 for file in sys.argv[1:]:
 	f = pd.read_csv(file)
-	f1 = f[0:23]
+	f1 = f[0:24]
 	for this in f1:
 		outfile = "1_" + file
 		f1.to_csv(path_or_buf=outfile,index=False,header=False)
@@ -103,7 +103,4 @@ for file in sys.argv[1:]:
 	for this in f24:
 		outfile = "24_" + file
 		f24.to_csv(path_or_buf=outfile,index=False,header=False)
-	f25 = f[575:599]
-	for this in f25:
-		outfile = "25_" + file
-		f25.to_csv(path_or_buf=outfile,index=False,header=False)
+	

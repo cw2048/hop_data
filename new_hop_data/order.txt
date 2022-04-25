@@ -1,0 +1,31 @@
+#Order of files to run
+
+####(python analysis.py July* this sums all the birds)
+
+
+
+python bybird.py July* #this separates all the birds into files. Output is 1_date etc.
+
+#Don't need this(python totalbird.py 1.txt 1_July*) #last imput needs to be name of out file #This add all the birds into 1 file
+
+python dates.py 1_July*
+
+python rest_birds_dates.py b2.txt 2_July* #This is to separate all the birds into minute long files to add to wroking file. 
+
+...
+
+Altering_Hop_Data.ipynb #run
+
+Open csv and remove header and 1st row
+
+python csv_to_txt.py Monitor02.csv
+
+
+
+
+to remove quotes 
+
+tr -d '\"' <Monitor02.txt> Monitor03.txt #tr (-d = delete) <filename> newfilename
+
+
+Monitor03.txt is now correct
