@@ -5,22 +5,38 @@ python bybird.py July* #this separates all the birds into files. Output is 1_dat
 python dates.py 1_July*
 
 python rest_birds_dates.py b2.txt 2_July* #This is to separate all the birds into minute long files to add to wroking file. 
-
+python rest_birds_dates.py b3.txt 3_July*
+python rest_birds_dates.py b4.txt 4_July*
 ...
 
 
 Altering_Hop_Data.ipynb #run
 
-Open csv and remove header and 1st row
+#Open csv and remove header and 1st row
 
 python csv_to_txt.py Monitor02.csv
 
 
 
 
-to remove quotes 
+#To clean file
 
-tr -d '\"' <Monitor02.txt> Monitor03.txt #tr (-d = delete) <filename> newfilename
+tr -d '\ \"' <Monitor02.txt> Monitor03.txt #tr (-d = delete) <filename> newfilename #removes quotes 
 
+sed -i 's/Jul/\ Jul\ /g' Monitor03.txt #Add spaces around all the dates in the file
 
-Monitor03.txt is now correct
+sed -i 's/\t$//g' Monitor03.txt #Removed tab at the end of each line
+
+sed -i 's/01\ Jul/1\ Jul/g' Monitor03.txt #Need to fix script to only use one digit days, this replaces
+sed -i 's/02\ Jul/2\ Jul/g' Monitor03.txt
+sed -i 's/03\ Jul/3\ Jul/g' Monitor03.txt
+sed -i 's/04\ Jul/4\ Jul/g' Monitor03.txt
+sed -i 's/05\ Jul/5\ Jul/g' Monitor03.txt
+sed -i 's/06\ Jul/6\ Jul/g' Monitor03.txt
+sed -i 's/07\ Jul/7\ Jul/g' Monitor03.txt
+sed -i 's/08\ Jul/8\ Jul/g' Monitor03.txt
+sed -i 's/09\ Jul/9\ Jul/g' Monitor03.txt
+
+Rename to Monitor3.txt
+
+Monitor3.txt is now correct

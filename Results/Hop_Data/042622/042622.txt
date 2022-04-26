@@ -1,0 +1,45 @@
+<Parameters><V1.0>
+<Light>
+</Light>
+<Temperature>
+</Temperature>
+<Note>
+</Note>
+<Genotypes>
+MONITOR	M003
+	
+
+C01	ALAN
+C02	ALAN
+C03	ALAN
+C04	Day
+C05	
+C06	Day
+C07	Day
+C08	ALAN
+C09	
+C10	
+C11	
+C12	
+C13	Night
+C14	ALAN
+C15	ALAN
+C16	Day
+C17	
+C18	Night
+C19	
+C20	ALAN
+C21	Night
+C22	Night
+C23	Night
+C24	Night
+C25	Night
+C26	
+C27	
+C28	
+C29	
+C30	
+C31	
+C32	
+</Genotypes>
+</Parameters><V1.0>

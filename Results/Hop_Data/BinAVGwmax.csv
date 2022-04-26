@@ -1,0 +1,25 @@
+Group,Fly Number,Bin Length,24-hour bin, 1st 12-hour bin, 2nd 12-hour bin
+ALAN,Fly 1,12/24 Default,306.2222,306.2222,0
+ALAN,Fly 2,12/24 Default,223.7778,223.7778,0
+ALAN,Fly 3,12/24 Default,0,0,0
+ALAN,Fly 4,12/24 Default,422.2222,422.2222,0.88889
+ALAN,Fly 5,12/24 Default,336.1111,336.1111,3.3333
+ALAN,Fly 6,12/24 Default,275.7778,275.7778,1.1111
+ALAN,Fly 7,12/24 Default,239.6667,239.6667,0
+ALAN,Average,12/24 Default,257.6825,257.6825,0.7619
+ALAN,SEM,12/24 Default,49.7092,49.7092,0.46477
+Day,Fly 1,12/24 Default,0,0,0
+Day,Fly 2,12/24 Default,0,0,0
+Day,Fly 3,12/24 Default,463,463,1.1111
+Day,Fly 4,12/24 Default,17.6667,17.6667,0.33333
+Day,Fly 5,12/24 Default,239.6667,239.6667,0
+Day,Fly 6,12/24 Default,239.6667,239.6667,0
+Day,Average,12/24 Default,160,160,0.24074
+Day,SEM,12/24 Default,76.5858,76.5858,0.18239
+Night,Fly 1,12/24 Default,0,0,0
+Night,Fly 2,12/24 Default,239.6667,239.6667,0
+Night,Fly 3,12/24 Default,239.6667,239.6667,0
+Night,Fly 4,12/24 Default,239.6667,239.6667,0
+Night,Fly 5,12/24 Default,239.6667,239.6667,0
+Night,Average,12/24 Default,191.7333,191.7333,0
+Night,SEM,12/24 Default,47.9333,47.9333,0
