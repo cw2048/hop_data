@@ -1,13 +1,27 @@
 #!/usr/bin/env python
 
+######################
+# This file separates all the birds into individual files, by date.
+# The output files are bird number_date (ex. 1_July 01, 2021.txt)
+#
+#Usage: python bybird.py July* 
+#
+####################
+
+
+
+
 import pandas as pd
 import numpy as np
 import sys
 import re
 
+#Systym imput for each dateed file
 for file in sys.argv[1:]:
 	f = pd.read_csv(file)
+	#separates the rows in to birds
 	f1 = f[0:24]
+	#Lists out all the activity into 1 column
 	for this in f1:
 		outfile = "1_" + file
 		f1.to_csv(path_or_buf=outfile,index=False,header=False)

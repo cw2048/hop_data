@@ -1,7 +1,11 @@
 #!/usr/bin/env python
 
 ####
-#Run dates.py on bird 1. Then run this on the rest of the birds and finally add them all together with the jupyter notebook. 
+#Run dates.py on bird 1. Then run this on the rest of the birds 
+# and finally add them all together with the jupyter notebook. 
+#
+#Usage: python rest_birds_dates.py b2.txt 2_July*
+# The second input if the name of the outfile. 
 ###
 
 import pandas as pd

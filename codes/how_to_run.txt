@@ -37,6 +37,6 @@ sed -i 's/07\ Jul/7\ Jul/g' Monitor03.txt
 sed -i 's/08\ Jul/8\ Jul/g' Monitor03.txt
 sed -i 's/09\ Jul/9\ Jul/g' Monitor03.txt
 
-Rename to Monitor3.txt
+#Rename to Monitor3.txt
 
-Monitor3.txt is now correct
+#Monitor3.txt is now correct

@@ -2,11 +2,15 @@
 
 
 #####
-# First run python by_bird.py to separate all the birds into individual files.
+# First run python bybird.py to separate all the birds into individual files.
 #
 # Then run this script to add all individual birds by dates together.
 #
-# Usage: python dates.py (ALL of what ever bird)
+# Usage: python dates.py 1_July*
+# python dates.py 2_July*
+# etc. ...
+#
+# (ALL of whatever bird)
 #
 ##############
 
@@ -16,8 +20,11 @@ import numpy as np
 import sys
 import re
 
+#Output will be all in one text file
 OUT = open("Monitor01.txt", 'w')
+#counter may not need to start here, but it matches another file
 CTR = 61354
+#Need a header for csv conversion and back
 OUT.write("header\n")
 
 #Pull in each bird file (by_bird.py adds the number to the begining of all files, so 2_* is all
@@ -40,6 +47,7 @@ for file in sys.argv[1:]:
 			line = line.split("\t")
 			minute = 0
 #			while minute < 61:
+			#There is an extra space at the end of each 1 bird. This removes it
 			line.pop()
 			for item in line:
 #				if item.isdigit():
@@ -79,6 +87,6 @@ for file in sys.argv[1:]:
 #			do_nothing = 0
 			hour = hour + 1
 	IN.close()
-	print(day)
+	print(day) #Check to see if it worked
 	#IN.close()
 OUT.close()
